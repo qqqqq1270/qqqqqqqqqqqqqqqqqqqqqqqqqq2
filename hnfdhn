@@ -1,0 +1,12 @@
+ # поиск пользователей
+ users = vk.Users.Search(new VkNet.Model.RequestParams.UserSearchParams
+    {
+        Sort = 0,
+        Count = 2,
+        Fields = VkNet.Enums.Filters.ProfileFields.Domain,
+        Country = 1,
+        Hometown = "Казань",
+        Sex = 0,
+        AgeFrom = 18,
+        AgeTo = 20
+    }
